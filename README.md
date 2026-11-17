@@ -16,7 +16,7 @@ The parser uses a state machine, checksum checking, and an inter-byte timeout. I
 
 This diagram shows how the test bytes pass through the program. The run_stream() function passes each byte and its arrival time to feed_byte(). The parser keeps track of the current state, frame data, checksum, and last byte time. A timeout or invalid frame resets the parser so it can look for the next message.
 
-![UART Frame Parser Architecture](images/project_architecture.png)
+![UART Frame Parser Architecture](project_architecture.png)
 
 ## 3. UART Frame Format
 
